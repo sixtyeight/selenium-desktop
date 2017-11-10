@@ -6,7 +6,7 @@ USER 0
 # add the chrome and gecko drivers
 #COPY chromedriver geckodriver /headless/
 
-COPY firefox /headless/firefox
+#COPY firefox /headless/firefox
 
 # replace the existing vnc_startup script and add the new one
 COPY start_drivers.sh vnc_startup.sh /dockerstartup/
