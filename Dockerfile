@@ -4,7 +4,7 @@ FROM consol/centos-xfce-vnc:1.2.1
 USER 0
 
 # add the chrome and gecko drivers
-COPY chromedriver geckodriver /headless/
+#COPY chromedriver geckodriver /headless/
 
 COPY firefox /headless/firefox
 
