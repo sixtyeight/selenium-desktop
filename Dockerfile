@@ -3,9 +3,9 @@ FROM consol/centos-xfce-vnc:1.2.1
 ## Use root to install additional software
 USER 0
 
-# add the chrome and gecko drivers
-COPY chromedriver geckodriver /headless/
-
+# copy selenium standalone server jar and config
+# and add the chrome and gecko drivers
+COPY selenium*.jar config.json chromedriver geckodriver /headless/
 COPY firefox /headless/firefox
 
 # replace the existing vnc_startup script and add the new one

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#echo -e "*** Starting geckodriver"
-#/headless/geckodriver --host=0.0.0.0 -b /headless/firefox/firefox  &
+echo "starting selenium server"
 
-#echo -e "*** Starting chromedriver"
-#/headless/chromedriver --whitelisted-ips="" &
+PATH=/headless/firefox:${PATH}
+java -jar selenium-*.jar -role node -hub http://selenium-hub.selenium-grid.svc:4444/grid/register -nodeConfig /headless/config.json &
+

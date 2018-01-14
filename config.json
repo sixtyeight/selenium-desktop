@@ -1,0 +1,27 @@
+{
+  "capabilities": [
+    {
+      "version": "57.0.4",
+      "browserName": "firefox",
+      "maxInstances": 1,
+      "seleniumProtocol": "WebDriver",
+      "applicationName": "",
+      "moz:firefoxOptions":
+        {
+          "log":
+            {
+              "level": "info"
+            }
+        }
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 1,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "nodePolling": 5000,
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2
+}
+
