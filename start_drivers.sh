@@ -3,5 +3,5 @@
 echo "starting selenium server"
 
 PATH=/headless/firefox:${PATH}
-java -jar selenium-*.jar -role node -hub http://selenium-hub.selenium-grid.svc:4444/grid/register -nodeConfig /headless/config.json &
+java -jar selenium-*.jar -role node -hub http://${HUB_PORT_4444_TCP_ADDR}:${HUB_PORT_4444_TCP_PORT}/grid/register -nodeConfig /headless/config.json &
 
