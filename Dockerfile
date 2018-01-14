@@ -5,7 +5,7 @@ USER 0
 
 # copy selenium standalone server jar and config
 # and add the chrome and gecko drivers
-COPY selenium*.jar config.json chromedriver geckodriver /headless/
+COPY selenium*.jar config.json geckodriver /headless/
 COPY firefox /headless/firefox
 
 # replace the existing vnc_startup script and add the new one
